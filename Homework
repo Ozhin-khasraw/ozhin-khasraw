@@ -1,0 +1,11 @@
+def factorial(num):
+    if(num == 0):
+        return 1
+    else:
+        return (num * factorial(num-1))
+
+list= [[1,12,3],[14,5,16],[7,8,9],[10,11,12],[13,14,15]]
+for i in list:
+    last = i[-1]
+    f = factorial(last)
+    print("the facyorial of ",last ,"is: ", f)
